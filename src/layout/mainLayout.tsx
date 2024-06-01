@@ -9,9 +9,9 @@ interface MainProps {
 
 const Main = ({ children }: MainProps) => {
   return (
-    <div className="flex flex-col items-center min-h-screen">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="w-1/2 flex items-center">{children}</main>
+      <div className="flex-grow items-start">{children}</div>
     </div>
   );
 };
